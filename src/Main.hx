@@ -27,16 +27,20 @@ class Main extends hxd.App {
         birdBmp.y = 400;
 
         //creating pipes
-        var pipeTile = hxd.Res.pipe.toTile();
+        var pipeTile = hxd.Res.pipeBot.toTile();
         var pipeBmp = new Bitmap(pipeTile, s2d);
         pipeBmp.x = 600;
         pipeBmp.y = 500;
+
+        var pipeTile = hxd.Res.pipeTop.toTile();
+        var pipeBmp = new Bitmap(pipeTile, s2d);
+        pipeBmp.x = 600;
+        pipeBmp.y = 0;
     }
 
     // on each frame
     override function update(dt:Float) {
-        // increment the display bitmap rotation by 0.1 radians
-        //bmp.rotation += 0.1;
+        // sim gravity
     }
 
     static function main() {
