@@ -3,6 +3,7 @@ class Main extends hxd.App {
     override function init() {
         hxd.Res.initEmbed();
         var bg = hxd.Res.fb_BG_jpeg.toTile();
+        bg.scaleToSize(1366, 766);
         // create bitmap used for background
         // create a Bitmap object, which will display the tile
         // and will be added to our 2D scene (s2d)
